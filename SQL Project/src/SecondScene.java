@@ -267,7 +267,8 @@ public class SecondScene extends Application {
           taResult.setStyle("-fx-text-fill: red");
           taResult.setText("You have not selected any Marks options");
         }
-      } else if (checkCourses.isSelected()) {
+      } 
+      else if (checkCourses.isSelected()) {
         if (courseitems.indexOf(CourseBox.getValue()) == 0) {
           System.out.println("Options index 0 for courses selected");
           taResult.clear();
@@ -282,7 +283,8 @@ public class SecondScene extends Application {
           taResult.setText("You have not selected any Courses option");
         }
 
-      } else {
+      } 
+      else {
         taResult.setStyle("-fx-text-fill: red");
         taResult.setText("Please select either check Marks or check Courses");
       }
